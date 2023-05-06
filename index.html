@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>¿Cuánto sabes sobre...?</title>
+</head>
+
+<body>
+    <div class="contenedorTitulo">
+        <h1>¿Cuánto sabes sobre...?</h1>
+    </div>
+    <div id="puntajes">
+        <div class="puntaje-card" id="actual">
+            <div class="etiqueta">Puntaje actual:</div>
+            <div class="valor" id="valor">0</div>
+        </div>
+        <div class="puntaje-card" id="maximos">
+            <div class="etiqueta">Puntaje máximo:</div>
+            <div class="valor" id="maximo">0</div>
+        </div>
+    </div>
+
+<div class="contenedordejuego" id="contenedordejuego">
+    <div id="ContenedorDePregunta" class="pregunta-card">
+        <div id="pregunta"></div>
+    </div>
+    <div id="opciones">
+        <div id="respuesta"  class="respuesta-container">
+           
+        </div>
+    </div>
+    <button id="siguientePregunta" style="display:none;">Siguiente Pregunta</button>
+</div>
+
+
+        <div class="overlay">
+            <div class="popup">
+                <div action="">
+                    <h4 id="registrarse">ELIGE LA CATEGORIA</h4>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Categoria</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu" id="Categoria">
+
+                        </ul>
+                    </div>
+
+                    <h4 id="registrarse">ELIGE LA DIFICULTAD</h4>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Dificultad</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li id="easy">FACIL</li>
+                            <li id="medium">MEDIO</li>
+                            <li id="hard">DIFICIL</li>
+                        </ul>
+                    </div>
+                    <div id="mensaje">
+
+                    </div>
+                    <button class="boton">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-loader" id="custom-loader"></div>
+    
+</body>
+
+</html>
